@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Hangman</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0e0e0, #343a40);
+            color: #343a40;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #212529;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #00d1b2 !important;
+        }
+
+        .dropdown-menu {
+            background-color: #343a40;
+        }
+
+        .dropdown-menu a {
+            color: #c4bebe !important;
+        }
+
+        /* Sección Principal */
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            max-width: 600px;
+            margin: 10px auto;
+            line-height: 1.6;
+        }
+
+        .shadow-box {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .shadow-box:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg p-2">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='Images/usuario.png')}}" alt="Logo" width="32">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link h5" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h5" href="https://www.instagram.com/_godhi_/" target="_blank">Instagram</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle h5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tareas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="presentacion.html">Presentación</a></li>
+                            <li><a class="dropdown-item" href="index_t1tarea2.html" target="_blank" rel="noopener noreferrer">Primer página</a></li>
+                            <li><a class="dropdown-item" href="git.html">GitHub</a></li>
+                            <li><a class="dropdown-item" href="vr.html">VR | AR</a></li>
+                            <li><a class="dropdown-item" href="scan.html">Scan 3D</a></li>
+                            <li><a class="dropdown-item" href="framework.html">Framework</a></li>
+                            <li><a class="dropdown-item" href="hangman.html">Hangman</a></li>
+                            <li><a class="dropdown-item" href="entorno_virtual.html">Entorno Virtual</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+        <h1 class="animate__animated animate__fadeInDown">Hangman</h1>
+        <p class="animate__animated animate__fadeInUp">Este código fue programado en c++ y su función es poder jugar el juego "Hangman"</p>
+    </section>
+
+    <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:2442.05px;position:relative"><div style="width:100%;padding-bottom:52.169284003194036%"></div><iframe width="2442.05" height="1274" title="Codigo c++ hangman" src="https://snappify.com/embed/ab2e77dd-4892-48a7-b305-135895f97a83?responsive=1&p=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(120deg,#F6D365FF,#FDA085FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+
+    <!--Footer-->
+    <footer>
+        <p>© 2024 Diego Navarro Sánchez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

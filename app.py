@@ -43,5 +43,9 @@ def entorno_virtual():
 def index():
     return render_template('index.html')
 
+@app.route('/flutter_flow.html')
+def flutter():
+    return render_template('flutter_flow.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -47,5 +47,9 @@ def index():
 def flutter():
     return render_template('flutter_flow.html')
 
+@app.route('/ibero.html')
+def ibero():
+    return render_template('ibero.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

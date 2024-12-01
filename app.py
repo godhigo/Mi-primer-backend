@@ -51,5 +51,9 @@ def flutter():
 def ibero():
     return render_template('ibero.html')
 
+@app.route('/techable.html')
+def techable():
+    return render_template('techable.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

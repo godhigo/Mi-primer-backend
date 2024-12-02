@@ -39,8 +39,8 @@ def hangman():
 def entorno_virtual():
     return render_template('entorno_virtual.html')
 
-@app.route('/index.html')
-def index():
+@app.route('/home')
+def home2():
     return render_template('index.html')
 
 @app.route('/flutter_flow.html')

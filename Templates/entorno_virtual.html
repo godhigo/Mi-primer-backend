@@ -115,73 +115,72 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-2">
-        <div class="container d-flex justify-content-center">
-            <a class="navbar-brand" href="index.html">
-                <img src="{{ url_for('static', filename='Images/usuario.png')}}" alt="Logo" width="32">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link h5" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link h5" href="https://www.instagram.com/_godhi_/" target="_blank">Instagram</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle h5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tareas
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="presentacion.html">Presentación</a></li>
-                            <li><a class="dropdown-item" href="index_t1tarea2.html" target="_blank" rel="noopener noreferrer">Primer página</a></li>
-                            <li><a class="dropdown-item" href="git.html">GitHub</a></li>
-                            <li><a class="dropdown-item" href="vr.html">VR | AR</a></li>
-                            <li><a class="dropdown-item" href="scan.html">Scan 3D</a></li>
-                            <li><a class="dropdown-item" href="framework.html">Framework</a></li>
-                            <li><a class="dropdown-item" href="hangman.html">Hangman</a></li>
-                            <li><a class="dropdown-item" href="entorno_virtual.html">Entorno Virtual</a></li>
-                            <li><a class="dropdown-item" href="flutter_flow.html">Flutter Flow</a></li>  <!--Nombre de un apartado del dropdown-->
-                            <li><a class="dropdown-item" href="ibero.html">Ibero</a></li> 
-                            <li><a class="dropdown-item" href="techable.html">Techable Machine</a></li> 
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg p-2">
+    <div class="container d-flex justify-content-center"> <!--Centrar contenido -->
+        <a class="navbar-brand" href="index.html"> <!--Link del logo-->
+            <img src="{{ url_for('static', filename='Images/usuario.png')}}" alt="Logo" width="32"> <!--Logo del navbar-->
+        </a>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav"> <!--Lista de enlaces-->
+                <li class="nav-item"> 
+                    <a class="nav-link h5" href="index.html">Home</a> <!--Enlace a la página de inicio-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h5" href="https://www.instagram.com/_godhi_/" target="_blank">Instagram</a> <!--Enlace a la página Instagram-->
+                </li>
+                <li class="nav-item dropdown"> <!--Dropdown (Lo que al pulsar en el se abre una selección)-->
+                    <a class="nav-link dropdown-toggle h5 ms-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tareas</a> <!--Nombre del dropdown (La opción que se ve al lado de Instagram y al que después de pulsar en él se abre la selección)-->     
+                    <ul class="dropdown-menu"> <!--Las opciones que vienen dentro del dropdown (La selección)-->
+                                    <!--Nombres de los apartados del dropdown-->
+                        <li><a class="dropdown-item" href="presentacion.html">Presentación</a></li> <!--Presentación-->
+                        <li><a class="dropdown-item" href="index_t1tarea2.html" target="_blank" rel="noopener noreferrer">Primer página</a></li>  <!--Primera página-->
+                        <li><a class="dropdown-item" href="git.html">GitHub</a></li>  <!--GitHub-->
+                        <li><a class="dropdown-item" href="vr.html">VR | AR</a></li>  <!--Realidad virtual-->
+                        <li><a class="dropdown-item" href="scan.html">Scan 3D</a></li> <!--Scan 3D-->
+                        <li><a class="dropdown-item" href="framework.html">Framework</a></li>  <!--Framework-->
+                        <li><a class="dropdown-item" href="hangman.html">Hangman</a></li> <!--Juego Ahorcados-->
+                        <hr class="dropdown-divider"> <!-- Línea divisora -->
+                        <li><a class="dropdown-item" href="entorno_virtual.html">Entorno Virtual</a></li> <!--Entorno virtual-->
+                        <hr class="dropdown-divider"> <!-- Línea divisora -->
+                        <li><a class="dropdown-item" href="flutter_flow.html">Flutter Flow</a></li>  <!--FlutterFlow-->
+                        <li><a class="dropdown-item" href="ibero.html">Ibero MODEVA</a></li> <!--Ibero MODEVA-->
+                        <li><a class="dropdown-item" href="techable.html">Techable Machine</a></li> <!--Techable Machine-->
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Sección Principal -->
     <section class="hero">
-        <h1 class="animate__animated animate__fadeInDown">Entorno Virtual</h1>
-        <p class="animate__animated animate__fadeInUp">El entorno virtual en programación, especialmente en Python, es un espacio aislado que permite gestionar dependencias y paquetes de forma independiente del sistema global.</p>
+        <h1 class="animate__animated animate__fadeInDown">Entorno Virtual</h1> <!--Encabezado-->
+        <p class="animate__animated animate__fadeInUp">El entorno virtual en programación, especialmente en Python, es un espacio aislado que permite gestionar dependencias y paquetes de forma independiente del sistema global.</p> <!--Ligera descripción-->
     </section>
 
     <!-- Tarjetas Tecnologías Redes Sociales -->
     <div class="card-container">
-        <div class="card animate__animated animate__fadeInLeft">
-            <h3>¿Cómo funciona?</h3>
-            <p>Un entorno virtual permite crear un espacio aislado para desarrollar proyectos en Python (o en otros lenguajes) sin conflictos entre dependencias, facilitando así la gestión y el mantenimiento del código.</p>
+        <div class="card animate__animated animate__fadeInLeft"> <!--Animación-->
+            <h3>¿Cómo funciona?</h3> <!--Título-->
+            <p>Un entorno virtual permite crear un espacio aislado para desarrollar proyectos en Python (o en otros lenguajes) sin conflictos entre dependencias, facilitando así la gestión y el mantenimiento del código.</p> <!--Contenido-->
         </div>
 
-        <div class="card animate__animated animate__fadeInUp">
-            <h3>Comandos</h3>
+        <div class="card animate__animated animate__fadeInUp"> <!--Animación-->
+            <h3>Comandos</h3> <!--Título-->
+            <!--Contenido-->
             <p>- <code>python -m venv (nombre)</code>: Crea un entorno virtual con un nombre específico.</p>
             <p>- <code>(nombre)\Scripts\activate</code>: Activa el entorno virtual en la terminal.</p>
             <p>- <code>python app.py</code>: Ejecuta el código Python y devuelve la página.</p>
         </div>
 
-        <div class="card animate__animated animate__fadeInRight">
-            <h3>¿Cuándo utilizarlo?</h3>
-            <p>Utiliza un entorno virtual siempre que necesites gestionar dependencias específicas, trabajar en múltiples proyectos, realizar pruebas, colaborar con otros o mantener la organización de tus proyectos.</p>
+        <div class="card animate__animated animate__fadeInRight"> <!--Animación-->
+            <h3>¿Cuándo utilizarlo?</h3> <!--Título-->
+            <p>Utiliza un entorno virtual siempre que necesites gestionar dependencias específicas, trabajar en múltiples proyectos, realizar pruebas, colaborar con otros o mantener la organización de tus proyectos.</p> <!--Contenido-->
         </div>
-    </div> <!-- Cierre del contenedor de tarjetas -->
+    </div>
 
-    <!-- Footer -->
+    <!--Footer-->
     <footer>
         <p>© 2024 Diego Navarro Sánchez. Todos los derechos reservados.</p>
     </footer>
